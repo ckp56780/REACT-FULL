@@ -3,6 +3,8 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FoodItems from './components/FoodItems';
 import ErrorMessage from './components/ErrorMessage';
+import Container from './components/Container';
+import Foodinput from './components/Foodinput';
 function App() {
   //18.this is 1st way to use the fragment in react
   // return (
@@ -41,11 +43,19 @@ function App() {
   //below i am using the ternary operator for conditional rendering in react
   //{foodItems.length===0 ? <h3>There is no food items</h3> : null}
   return (
-    <> 
+    <>
+    <Container> 
       <h1 className="food-Heading">Healthy Foods</h1>
+      <Foodinput> </Foodinput>
       <ErrorMessage items={foodItems} />
       <FoodItems items={foodItems} />
-    </> 
+      
+    </Container>
+
+    <Container> 
+      <p>Above is the list of foods that are good for your health. </p>
+    </Container>
+    </>
   );
 }
 

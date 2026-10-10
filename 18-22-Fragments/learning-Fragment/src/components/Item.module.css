@@ -1,0 +1,17 @@
+
+.list-group-item.kg-item {
+  color: rgb(81, 35, 161);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+
+.kg-span{
+  font-size: 20px;
+  
+}
+.button{
+  margin-left: 20px;
+  float:right
+}
